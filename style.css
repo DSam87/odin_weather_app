@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.outer-container {
+  background-color: rgba(0, 0, 0, 0.863);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.main-container {
+  width: 40%;
+  max-width: 800px;
+  height: 90%;
+  max-height: 800px;
+  background-color: rgba(0, 0, 0, 0.315);
+  /* border: 2px solid rgba(255, 255, 255, 0.068); */
+  /* box-shadow: rgba(0, 0, 0, 0.288) 0px 2px 15px 1px; */
+  border-radius: 10px;
+  margin: 15px;
+  display: grid;
+}
+
+/* week container */
+
+.week-container {
+  width: 55%;
+  max-width: 850px;
+  height: 10%;
+  max-height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.btn {
+  color: rgba(255, 255, 255, 0.705);
+  font-size: 48px;
+  font-weight: 800;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.day1 {
+  background-color: rgba(0, 0, 0, 0.315);
+  width: 90%;
+}
