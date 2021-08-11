@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Lato", sans-serif;
 }
 
 .outer-container {
@@ -26,9 +27,17 @@
   border-radius: 10px;
   margin: 15px;
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
 }
 
 /* week container */
+/* how to compress text with grid */
+p {
+  width: 100%;
+  max-width: 100%;
+}
 
 .week-container {
   width: 55%;
@@ -56,4 +65,68 @@
 .day1 {
   background-color: rgba(0, 0, 0, 0.315);
   width: 90%;
+}
+
+.city-name {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  text-align: center;
+
+  color: white;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  align-self: center;
+  border-bottom: solid white 2px;
+  margin: 0px 100px;
+  display: inline;
+}
+
+.state-name {
+  font-size: 24px;
+  display: inline;
+  margin-bottom: 10px;
+}
+
+.city-info {
+  grid-column: 2 / 4;
+  grid-row: 4/ 5;
+
+  color: white;
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  align-self: center;
+  margin: 0px 25px;
+  text-align: center;
+  align-self: start;
+}
+
+.weather-description {
+  grid-column: 1/ 5;
+  grid-row: 3/4;
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  align-self: center;
+  margin: 0px 25px;
+  text-align: center;
+  align-self: start;
+}
+
+.city-weather-icon {
+  grid-column: 2 / 4;
+  grid-row: 2/3;
+  width: 100%;
+  background-repeat: no-repeat;
+  background: center center no-repeat;
+  height: 100%;
+}
+
+input {
+  width: 100%;
+  grid-column: 2/9;
+  font-size: 36px;
+  text-align: center;
 }
